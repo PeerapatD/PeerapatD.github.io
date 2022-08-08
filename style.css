@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  background-image: url(/image/city_background.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  background-position-y: 1rem;
+}
+
+header {
+  background-color: #F8F8F8;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 45px;
+  padding-bottom: 6px;
+  background-color: #222222; 
+}
+
+.top-bar_items {
+  margin-left: 25rem;
+  width: 134px;
+  height: 16px;
+  z-index: 99;
+}
+
+.top-bar_items button {
+  font-size: 13px;
+  padding: 2px 4px;
+  color: #F8F8F8;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.top-bar .user {
+  margin-left: 13px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 112px;
+  width: 100%;
+  padding-left: 8rem;
+}
+
+nav .brand {
+  display: flex;
+  height: 29px;
+  width: 240px;
+  align-items: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  
+}
+
+nav .brand .bold {
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 15rem;
+  font-size: 13px;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  margin: 0 15px;
+}
+
+nav a {
+  letter-spacing: .5px;
+  padding: 2px 5px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #222222;
+}
+
+nav .search {
+  display: flex;
+  height: 30px;
+  width: 190px;
+  margin-right: 0rem;
+}
+
+.nav input {
+  height: 30px;
+}
+
+nav .search i {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  cursor: pointer;
+}
+
+nav .search input {
+  height: 30px;
+  width: 200px;
+}
+
+.intro {
+  display: block;
+  height: 450px;
+  width: 100%;
+}
+
+.intro .container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(34, 34, 34, 0.7);
+}
+
+.intro .background-text {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.intro .background-text span {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  color: rgb(255, 255, 255, 0.1);
+  font-size: 25rem;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  padding-left: 20rem;
+  justify-content: center;
+  font-weight:600;
+  font-weight: bold;
+  overflow: hidden;
+  letter-spacing: 25rem;
+}
+
+.intro .background-text .front-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  color: #18180c;
+  z-index: 99;
+  row-gap: 25px;
+}
+
+.intro .background-text .front-text h1 {
+  font-size: 2rem;
+  color: #F8F8F8;
+}
+
+.intro .background-text .front-text h3 {
+  color: #F8F8F8;
+}
+
+.content {
+  width: 100%;
+  height: 600px;
+  background-color: #F8F8F8;
+}
+
+.content .container {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: #F8F8F8;
+}
+
+/* Log In Form */
+
+.content .login {
+  display: flex;
+  width: 47%;
+  margin-top: 4rem;
+}
+
+.content .login form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login form h2, input {
+  margin-bottom: 2rem;
+}
+
+.login input {
+  height: 40px;
+}
+
+.login .signin {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.login .signin button {
+  width: 150px;
+  height: 60px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #F8F8F8;
+  background-color: #00C8C8;
+  cursor: pointer;
+}
+
+.login .signin a {
+  display: flex;
+  align-self: center;
+  text-decoration: none;
+  color: #00C8C8;
+}
+
+.login .signin i {
+  display: flex;
+  margin-left: 5px;
+  border: 1px solid #00C8C8;
+  padding: 2px;
+  color: #00C8C8;
+}
+
+/* Vertical Border */
+
+.vertical {
+  align-self: center;
+  width: .5px;
+  height: 67%;
+  margin-top: -3.5rem;
+  background-color: black;
+  opacity: .15;
+}
+
+/* Create Account Form */
+
+.content .register {
+  display: flex;
+  width: 47%;
+  margin-top: 4rem;
+}
+
+.content .register form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.register form h2, input {
+  margin-bottom: 2rem;
+}
+
+.register input {
+  height: 40px;
+}
+
+.register .offer {
+  display: flex;
+  width: 100%;
+  height: 70px;
+}
+
+.register .check-btn {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.register .offer input {
+  display: flex;
+  height: 25px;
+  width: 25px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.register .offer span {
+  margin-left: 1rem;
+}
+
+.register .create-acc {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+
+.register .create-acc button {
+  width: 262px;
+  height: 60px;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  background-color: #F8F8F8;
+}
+
+.register .create-acc .privacy {
+  display: flex;
+  width: 259px;
+  height: 60px;
+  align-items: center;
+  line-height: 1.4rem;
+  text-align: right;
+}
+
+.register .create-acc .privacy a {
+  text-decoration: none;
+  color: #00C8C8;
+}
+
+.register .create-acc .privacy i {
+  font-size: .9rem;
+  margin-left: .3rem;
+  border: 1px solid #00C8C8;
+  padding: 2px;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  justify-content: center;
+  /* background-color: rgb(243, 214, 176); */
+}
+
+.footer .container {
+  height: 100%;
+  width: 60%;
+  margin-top: 5rem;
+  /* background-color: rgb(114, 219, 238); */
+}
+
+.footer .info {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* background-color: crimson; */
+}
+
+.footer .footer-info .info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  width: 20%;
+  height: 350px;
+  /* background-color: blue; */
+}
+
+.footer .info h2 {
+  align-self: flex-start;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.footer-info ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 2rem;
+  /* background-color: chocolate; */
+}
+
+.footer-info li {
+  display: flex;
+  width: 90%;
+  height: 20px;
+  margin: 10px 0;
+  align-items: center;
+  /* background-color: pink; */
+}
+
+.footer-info a {
+font-size: 1rem;
+text-decoration: none;
+letter-spacing: 1px;
+color: #222222;
+}
+
+.footer .banner {
+  background-color: aliceblue;
+  height: 200px;
+}
+
+.footer .banner-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner .award, .social {
+  display: flex;
+  width: 49%;
+  height: 100%;
+}
+
+.banner .award h1 {
+  margin-bottom: 1rem;
+}
+
+.banner .award h2 {
+  font-weight: lighter;
+}
+
+.banner .award-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #F8F8F8;
+  background-color: black;
+}
+
+.banner .social-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: #00C8C8;
+}
+
+.banner .social i {
+  border: 2px solid #F8F8F8;
+  font-size: 1.5rem;
+  padding: 3px;
+  color: #F8F8F8;
+}
+
+.copyright {
+  display: flex;
+  height: 45px;
+  justify-content: space-between;
+  color: #F8F8F8;
+  background-color: black;
+}
+
+.copyright .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  opacity: .5;
+}
+
+.copyright .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  opacity: .5;
+}
+
+.copyright .right span {
+  width: 50px;
+}
